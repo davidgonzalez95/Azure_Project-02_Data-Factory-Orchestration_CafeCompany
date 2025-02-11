@@ -1,0 +1,4 @@
+branch_id;location;employees;number_tables;location_size;opening_hours
+1;Zürich HB;8;25;150;Mon-Sat, 9 AM - 6 PM
+2;Altstetten HB;6;18;110;Mon-Sat, 9 AM - 6 PM
+3;Bahnhof Winterthur;7;22;130;Mon-Sat, 9 AM - 6 PM
