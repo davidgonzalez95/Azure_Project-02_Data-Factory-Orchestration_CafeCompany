@@ -1,52 +1,17 @@
 [
     {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Product_Categories.csv",
-        "p_sink_folder" : "AdventureWorks_Product_Categories",
+        "p_rel_url" : "davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/refs/heads/main/Data/01_Branch_Zürich%20HB/2025_01_Sales.csv",
+        "p_sink_folder" : "Branch_01",
         "p_sink_file" : "AdventureWorks_Product_Categories.csv"
     },
     {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Calendar.csv",
-        "p_sink_folder" : "AdventureWorks_Calendar",
+        "p_rel_url" : "davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/refs/heads/main/Data/02_Branch_Altstetten%20HB/2025_01_Sales.csv",
+        "p_sink_folder" : "Branch_02",
         "p_sink_file" : "AdventureWorks_Calendar.csv"
     },
     {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Customers.csv",
-        "p_sink_folder" : "AdventureWorks_Customers",
-        "p_sink_file" : "AdventureWorks_Customers.csv"
-    },
-    {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Product_Subcategories.csv",
-        "p_sink_folder" : "Product_Subcategories",
-        "p_sink_file" : "AdventureWorks_Product_Subcategories.csv"
-    },
-    {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Products.csv",
-        "p_sink_folder" : "AdventureWorks_Products",
-        "p_sink_file" : "AdventureWorks_Products.csv"
-    },
-    {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Returns.csv",
-        "p_sink_folder" : "AdventureWorks_Returns",
-        "p_sink_file":"AdventureWorks_Returns.csv"
-    },
-    {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Sales_2015.csv",
-        "p_sink_folder" : "AdventureWorks_Sales_2015",
-        "p_sink_file" : "AdventureWorks_Sales_2015.csv"
-    },
-    {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Sales_2016.csv",
-        "p_sink_folder" : "AdventureWorks_Sales_2016",
-        "p_sink_file" : "AdventureWorks_Sales_2016.cvsv"
-    },
-    {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Sales_2017.csv",
-        "p_sink_folder" : "AdventureWorks_Sales_2017",
-        "p_sink_file" : "AdventureWorks_Sales_2017.csv"
-    },
-    {
-        "p_rel_url" : "davidgonzalez95/End-to-End-Data-Engineering-on-Azure-AdventureWorks-Project/refs/heads/main/Data/AdventureWorks_Territories.csv",
-        "p_sink_folder" : "AdventureWorks_Territories",
-        "p_sink_file" : "AdventureWorks_Territories.csv"
+        "p_rel_url" : "davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/refs/heads/main/Data/03_Branch_Bahnhof%20Winterthur/2025_01_Sales.csv",
+        "p_sink_folder" : "Branch_03",
+        "p_sink_file" : "2025_01_Sales.csv"
     }
 ]
