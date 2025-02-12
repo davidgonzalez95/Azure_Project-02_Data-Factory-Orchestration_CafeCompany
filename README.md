@@ -22,9 +22,9 @@ The primary pipeline is responsible for:
 
 ## Technical Components
 
- - Azure Data Factory (ADF): Data integration and orchestration platform.
- - SharePoint/GitHub: Data source for subsidiaries' sales records.
- - Azure Data Lake: Centralized storage for transformed data.
- - ETL Pipelines: Data transformation and loading processes.
- - Scheduled Triggers: Automated pipeline execution.
- - Monitoring and Notifications: Alerts for success or failure events.
+ - **Azure Data Factory (ADF):** Data integration and orchestration platform.
+ - **SharePoint/GitHub:** Data source for subsidiaries' sales records.
+ - **Azure Data Lake:** Centralized storage for transformed data.
+ - **ETL Pipelines:** Data transformation and loading processes.
+ - **Scheduled Triggers:** Automated pipeline execution.
+ - **Monitoring and Notifications:** Alerts for success or failure events.
