@@ -12,12 +12,23 @@ The primary pipeline is responsible for:
 
 1- Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub).
 
+![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data.png)
+
 2- Distributing the transformed data to two destinations:
  - **Data Science Team:** The data undergoes aggregation and transformation through an ETL process.
  - **Headquarters:** Additional transformations are performed to convert the data into KPIs for quick reporting.
 
+![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table.png)
+![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table_inside.png)
+
 3- Extracting data from dimensional tables for the Data Science team.
+
+![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables.png)
+
 4- Executing the pipelines automatically via a scheduled trigger.
+
+![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Production.png)
+
 5- Monitoring pipeline execution by sending success or failure notifications.
 
 ## Technical Components
