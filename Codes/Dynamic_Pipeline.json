@@ -1,17 +1,14 @@
 [
     {
         "p_rel_url" : "davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/refs/heads/main/Data/01_Branch_Zürich%20HB/2025_01_Sales.csv",
-        "p_sink_folder" : "Branch_01",
-        "p_sink_file" : "2025_01_Sales.csv"
+        "p_sink_file" : "2025_01_Sales_Branch_01.csv"
     },
     {
         "p_rel_url" : "davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/refs/heads/main/Data/02_Branch_Altstetten%20HB/2025_01_Sales.csv",
-        "p_sink_folder" : "Branch_02",
-        "p_sink_file" : "2025_01_Sales.csv"
+        "p_sink_file" : "2025_01_Sales_Branch_02.csv"
     },
     {
         "p_rel_url" : "davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/refs/heads/main/Data/03_Branch_Bahnhof%20Winterthur/2025_01_Sales.csv",
-        "p_sink_folder" : "Branch_03",
-        "p_sink_file" : "2025_01_Sales.csv"
+        "p_sink_file" : "2025_01_Sales_Branch_03.csv"
     }
 ]
