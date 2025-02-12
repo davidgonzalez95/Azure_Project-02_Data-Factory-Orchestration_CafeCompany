@@ -13,8 +13,8 @@ The primary pipeline is responsible for:
 1- Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub).
 
 2- Distributing the transformed data to two destinations:
- - Data Science Team: The data undergoes aggregation and transformation through an ETL process.
- - Headquarters: Additional transformations are performed to convert the data into KPIs for quick reporting.
+ - **Data Science Team:** The data undergoes aggregation and transformation through an ETL process.
+ - **Headquarters:** Additional transformations are performed to convert the data into KPIs for quick reporting.
 
 3- Extracting data from dimensional tables for the Data Science team.
 4- Executing the pipelines automatically via a scheduled trigger.
