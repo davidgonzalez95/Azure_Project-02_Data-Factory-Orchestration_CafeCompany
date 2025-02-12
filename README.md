@@ -10,12 +10,13 @@ This Azure Data Factory data orchestration project aims to automate the extracti
 
 The architecture is based on the following steps:
 
-1- **PL_Extract_Data:**: Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub), by using a dynamic copy parameter within a forEach activity that reads the corresponding url address and loads the data through a json file placed in the Lookup Activity.
+### **1- PL_Extract_Data:** 
+Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub), by using a **dynamic copy parameter** within a forEach activity that reads the corresponding url address and loads the data through a json file placed in the Lookup Activity.
 
 ![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data.png)
 
- - Steps:
-   - Creation a Dynamic Copy Activity:
+#### **Steps:**
+  - **Creation a Dynamic Copy Activity:**
      Creation of source:
      ![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_source_inside.png)
      ![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_source.png)
@@ -24,11 +25,11 @@ The architecture is based on the following steps:
      ![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_sink_inside.png)
      ![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_sink.png)
 
-   - Creation of LookUp Activity by using json parameter:
+  - **Creation of LookUp Activity by using json parameter:**
      [Parameters JSON](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Codes/Dynamic_Pipeline.json)
      ![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Parameter_of_LookUp_Activity.png)
      
-   - Creation of forEach Activity and put inside the Dynamic Copy:
+  - **Creation of forEach Activity and put inside the Dynamic Copy:**
      ![image](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/ForEach_Activity.png)
 
 2- Distributing the transformed data to two destinations:
