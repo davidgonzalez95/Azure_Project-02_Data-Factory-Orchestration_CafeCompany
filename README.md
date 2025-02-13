@@ -11,8 +11,8 @@
    4. [Executing the Pipelines](#4-executing-the-pipelines)
    5. [Monitoring Pipeline Execution](#5-monitoring-pipeline-execution)
 4. [Results](#results)
-    [Data Science Folder](#data-science-folder)
-    [Reporting Folder](#reporting-folder)
+   1. [Data Science Folder](#data-science-folder)
+   2. [Reporting Folder](#reporting-folder)
 
 ## Project Description
 
