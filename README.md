@@ -6,21 +6,34 @@
 2. [Technical Components](#technical-components)
 3. [Pipeline Architecture](#pipeline-architecture)
    - [1- PL_Extract_Data](#pl_extract_data)
+     - [Steps:](#steps-pl_extract_data)
+       - [Creation a Dynamic Copy Activity](#creation-a-dynamic-copy-activity)
+       - [Creation of LookUp Activity by using json parameter](#creation-of-lookup-activity-by-using-json-parameter)
+       - [Creation of forEach Activity and put inside the Dynamic Copy](#creation-of-foreach-activity-and-put-inside-the-dynamic-copy)
+     - [PL_Extract_Data results](#pl_extract_data-results)
    - [2- PL_Trans_Load_Fact_Table](#pl_trans_load_fact_table)
+     - [Steps:](#steps-pl_trans_load_fact_table)
+       - [Creation a Data flow Activity](#creation-a-data-flow-activity)
    - [3- PL_Load_Dim_Tables](#pl_load_dim_tables)
-   - [4- Executing the Pipelines](#executing_the_pipelines)
-   - [5- Monitoring Pipeline Execution](#monitoring_pipeline_execution)
+     - [Steps:](#steps-pl_load_dim_tables)
+       - [Creation of Get Metadata Activity](#creation-of-get-metadata-activity)
+       - [Creation of forEach Activity and put inside the Dynamic Copy](#creation-of-foreach-activity-and-put-inside-the-dynamic-copy-pl_load_dim_tables)
+       - [Creation a Dynamic Copy Activity](#creation-a-dynamic-copy-activity-pl_load_dim_tables)
+   - [4- Executing the pipelines automatically via a scheduled trigger](#executing-the-pipelines-automatically-via-a-scheduled-trigger)
+   - [5- Monitoring pipeline execution by sending success or failure notifications](#monitoring-pipeline-execution-by-sending-success-or-failure-notifications)
 4. [Results](#results)
-   - [Data Science Folder](#data-science-folder)
+   - [Data science Folder](#data-science-folder)
    - [Reporting Folder](#reporting-folder)
 
-## Project Description
+## Project Description 
+<a name="project-description"></a>
 
 This project addresses the problem a company may face when managing data distributed across multiple subsidiaries. In this project, the company has adopted a decentralized data management structure, where each subsidiary stores its data locally in SharePoint (simulated in this project using GitHub), while the headquarters consolidates this data into a Data Lake for global analysis. 
 
 This data orchestration project with Azure Data Factory aims to automate the extraction, transformation, and loading (ETL) of sales data from subsidiaries through scheduled and monitored pipelines.
 
 ## Technical Components
+<a name="technical-components"></a>
 
  - **Azure Data Factory (ADF):** Data integration and orchestration platform.
  - **SharePoint/GitHub:** Data source for subsidiaries' sales records.
@@ -30,6 +43,7 @@ This data orchestration project with Azure Data Factory aims to automate the ext
  - **Monitoring and Notifications:** Alerts for success or failure events.
 
 ## Pipeline Architecture
+<a name="pipeline-architecture"></a>
 
 A **modular pipeline structure** was chosen to improve reusability, maintainability, and scalability. By breaking processes into smaller modules, updates and reuse can be done without affecting the main workflow. It also allows for more efficient error management, optimizes performance by enabling parallel execution, and enhances the understanding of the workflow. This modular approach also **simplifies version control** and deployment of specific changes without disrupting the overall system.
 
@@ -37,7 +51,9 @@ The architecture is based on the following steps:
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Production.png" alt="image" width="500" height="auto">
 
-### **1- PL_Extract_Data:** 
+### **1- PL_Extract_Data:**
+<a name="pl_extract_data"></a>
+
 Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub), by using a **dynamic copy parameter to extract the path URL and file destination** within a forEach activity that reads the corresponding url address and loads the data through a json file placed in the Lookup Activity.
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data.png" alt="image" width="500" height="auto">
@@ -71,7 +87,8 @@ Extracting sales data for January from the subsidiaries' SharePoint repositories
 
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Storage_fact-data.png" alt="image" width="200" height="auto">
 
-### **2- PL_Trans_Load_Fact_Table:** 
+### **2- PL_Trans_Load_Fact_Table:**
+<a name="pl_trans_load_fact_table"></a>
 Distributing the transformed data to two destinations:
  - **Data Science Team:** The data undergoes aggregation and transformation through an ETL process.
  - **Headquarters:** Additional transformations are performed to convert the data into KPIs for quick reporting.
@@ -94,6 +111,7 @@ Distributing the transformed data to two destinations:
     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside_sink.png" alt="image" width="500" height="auto">
 
 ### **3- PL_Load_Dim_Tables:**
+<a name="pl_load_dim_tables"></a>
 Extracting data from dimensional tables to the Data Science folder:
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables.png" alt="image" width="500" height="auto">
@@ -128,13 +146,15 @@ Extracting data from dimensional tables to the Data Science folder:
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables/PL_Load_Dim_Tables_CopyActivity_sink_inside.png" alt="image" width="500" height="auto">
 
 ### 4- Executing the pipelines automatically via a scheduled trigger:
-
+<a name="executing-the-pipelines-automatically-via-a-scheduled-trigger"></a>
 
 ### 5- Monitoring pipeline execution by sending success or failure notifications:
+<a name="monitoring-pipeline-execution-by-sending-success-or-failure-notifications"></a>
 
 
 
-### 6- Results:
+## Results:
+<a name="results"></a>
 
 - [**Data science Folder**](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/tree/main/Data/Pipeline_Results/data-science-models)
   
