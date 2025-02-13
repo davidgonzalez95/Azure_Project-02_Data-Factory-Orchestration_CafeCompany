@@ -1,18 +1,18 @@
 # Azure-Data-Factory-Data-Orchestration-Project
 
-# Table of Contents
+## Table of Contents
 
 1. [Project Description](#project-description)
 2. [Technical Components](#technical-components)
 3. [Pipeline Architecture](#pipeline-architecture)
-   1. [PL_Extract_Data](#1-pl_extract_data)
-   2. [PL_Trans_Load_Fact_Table](#2-pl_trans_load_fact_table)
-   3. [PL_Load_Dim_Tables](#3-pl_load_dim_tables)
-   4. [Executing the Pipelines](#4-executing-the-pipelines)
-   5. [Monitoring Pipeline Execution](#5-monitoring-pipeline-execution)
+   - [PL_Extract_Data](#pl_extract_data)
+   - [PL_Trans_Load_Fact_Table](#pl_trans_load_fact_table)
+   - [PL_Load_Dim_Tables](#pl_load_dim_tables)
+   - [Executing the Pipelines](#executing-the-pipelines)
+   - [Monitoring Pipeline Execution](#monitoring-pipeline-execution)
 4. [Results](#results)
-   1. [Data Science Folder](#data-science-folder)
-   2. [Reporting Folder](#reporting-folder)
+   - [Data Science Folder](#data-science-folder)
+   - [Reporting Folder](#reporting-folder)
 
 ## Project Description
 
