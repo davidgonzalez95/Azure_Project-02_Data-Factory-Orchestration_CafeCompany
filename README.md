@@ -9,7 +9,7 @@
    - [2- PL_Trans_Load_Fact_Table](#pl_trans_load_fact_table)
    - [3- PL_Load_Dim_Tables](#pl_load_dim_tables)
    - [4- Executing the pipelines automatically via a scheduled trigger](#executing-the-pipelines-automatically-via-a-scheduled-trigger)
-   - [5- Monitoring pipeline execution by sending success or failure notifications](#monitoring-pipeline-execution-by-sending-success-or-failure-notifications)
+   - [5- Monitoring pipeline execution by sending a failure notification](#monitoring-pipeline-execution-by-sending-a-failure-notification)
 4. [Results](#results)
 
 ## Project Description <a name="project-description"></a>
@@ -145,9 +145,21 @@ This is the scheduled trigger design:
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Trigger.png" alt="image" width="500" height="auto">
 
-### 5- Monitoring pipeline execution by sending success or failure notifications: <a name="monitoring-pipeline-execution-by-sending-success-or-failure-notifications"></a>
+### 5- Monitoring pipeline execution by sending a failure notification: <a name="monitoring-pipeline-execution-by-sending-a-failure-notification"></a>
 
+In this case, it has been decided to create an email notification only in the event of a failure in any of the created pipelines. These are the characteristics of the notification:
 
+<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Notifications/Alert_logic_Failure.png" alt="image" width="500" height="auto">
+
+- **Characteristics:**
+
+  <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Notifications/Alert_logic_Failure_charateristics.png" alt="image" width="500" height="auto"> 
+  <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Notifications/Alert_logic_Failure_charateristics_2.png" alt="image" width="500" height="auto">
+
+- **Type of notification:**
+  
+  <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Notifications/Alert_logic_Failure_notification.png" alt="image" width="500" height="auto">
+  <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Notifications/Alert_logic_Failure_notification_inside.png" alt="image" width="500" height="auto">
 
 ## Results: <a name="results"></a>
 
