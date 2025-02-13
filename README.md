@@ -139,6 +139,5 @@ Extracting data from dimensional tables to the Data Science folder:
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Storage_data-science-models.png" alt="image" width="200" height="auto">
 
 - [(Reporting Folder:)](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/tree/main/Data/Pipeline_Results/hq-data-monthly-report)
-  
-  https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/tree/main/Data/Pipeline_Results/data-science-models
-<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Storage_hq-data-monthly-report.png" alt="image" width="200" height="auto">
+
+<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Storage_hq-data-monthly-report.png" alt="image" width="250" height="auto">
