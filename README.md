@@ -47,13 +47,14 @@ Distributing the transformed data to two destinations:
 
 #### **Steps:**
   - **Creation a Data flow Activity:**
+    
      **1- Creation of source connection:** It is used a with path to extract all csv files:
 
     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside_source.png" alt="image" width="500" height="auto">
 
      **2- Transform the dataset for each purpose:**
 
-    <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside.png" alt="image" width="500" height="auto">
+    <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside.png" alt="image" width="800" height="auto">
      
      **3- Creation of sink connection:** It is used a single partition with the purpose to maintain just one file**
 
