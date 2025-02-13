@@ -1,4 +1,4 @@
-# Azure Data Factory Orchestration for Cafe Company
+# Azure Data Factory Orchestration for Cafe Company Project
 
 ## Table of Contents
 
