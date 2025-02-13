@@ -29,7 +29,7 @@
 
 ## Pipeline Architecture <a name="pipeline-architecture"></a>
 
-A **modular pipeline structure** was chosen to improve reusability, maintainability, and scalability. By breaking processes into smaller modules, updates and reuse can be done without affecting the main workflow. It also allows for more efficient error management, optimizes performance by enabling parallel execution, and enhances the understanding of the workflow. This modular approach also **simplifies version control** and deployment of specific changes without disrupting the overall system.
+<p align="justify">A <b>modular pipeline structure</b> was chosen to improve reusability, maintainability, and scalability. By breaking processes into smaller modules, updates and reuse can be done without affecting the main workflow. It also allows for more efficient error management, optimizes performance by enabling parallel execution, and enhances the understanding of the workflow. This modular approach also <b>simplifies version control</b> and deployment of specific changes without disrupting the overall system.</p>
 
 The architecture is based on the following steps:
 
@@ -37,7 +37,7 @@ The architecture is based on the following steps:
 
 ### **1- PL_Extract_Data:** <a name="pl_extract_data"></a>
 
-Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub), by using a **dynamic copy parameter to extract the path URL and file destination** within a forEach activity that reads the corresponding url address and loads the data through a json file placed in the Lookup Activity.
+<p align="justify">Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub), by using a <b>dynamic copy parameter to extract the path URL and file destination</b>b> within a forEach activity that reads the corresponding url address and loads the data through a json file placed in the Lookup Activity.</p>
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data.png" alt="image" width="500" height="auto">
 
@@ -130,7 +130,7 @@ Extracting data from dimensional tables to the Data Science folder:
 
 ### 4- Type of trigger: <a name="type-of-trigger"></a>
 
-Since the subsidiaries upload their data to their respective repositories on GitHub on a specific day, but the **exact time of upload is unknown**, it was decided to use a **scheduled trigger** to ensure that the pipelines run at regular intervals every hour throughout that day.
+<p align="justify">Since the subsidiaries upload their data to their respective repositories on GitHub on a specific day, but the <b>exact time of upload is unknown</b>, it was decided to use a <b>scheduled trigger</b> to ensure that the pipelines run at regular intervals every hour throughout that day.</p>
 
 The workflow would be as follows:
 
@@ -138,7 +138,7 @@ The workflow would be as follows:
 - To ensure that the data is extracted as soon as it is uploaded, a scheduled trigger is set up to run the data extraction pipeline every hour during that day.
 - In this way, even though the exact time when the data will be available cannot be predicted, the pipeline will continuously check, and when the data becomes available, the extraction, transformation, and loading (ETL) process will be initiated.
 
-This approach also has the advantage of **ensuring there are no significant delays in processing**, as the pipeline will automatically execute at regular intervals, without the need for manual intervention.
+<p align="justify">This approach also has the advantage of <b>ensuring there are no significant delays in processing</b>, as the pipeline will automatically execute at regular intervals, without the need for manual intervention.</p>
 
 This is the scheduled trigger design: 
 
