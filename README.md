@@ -5,7 +5,7 @@
 1. [Project Description](#project-description)
 2. [Technical Components](#technical-components)
 3. [Pipeline Architecture](#pipeline-architecture)
-   - [PL_Extract_Data](#pl_extract_data)
+   - [PL_Extract_Data](#1-pl_extract_data)
    - [PL_Trans_Load_Fact_Table](#pl_trans_load_fact_table)
    - [PL_Load_Dim_Tables](#pl_load_dim_tables)
    - [Executing the Pipelines](#executing-the-pipelines)
