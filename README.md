@@ -30,23 +30,61 @@ Extracting sales data for January from the subsidiaries' SharePoint repositories
      
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_sink.png" alt="image" width="500" height="auto">
 
-  - **Creation of LookUp Activity by using json parameter:**[(Format of JSON)](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Codes/Dynamic_Pipeline.json)
+  - **Creation of LookUp Activity by using json parameter:** [(Format of JSON)](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Codes/Dynamic_Pipeline.json)
     
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Parameter_of_LookUp_Activity.png" alt="image" width="500" height="auto">
      
-  - **Creation of forEach Activity and put inside the Dynamic Copy:**
+  - **Creation of forEach Activity and put inside the Dynamic Copy:** (Extract the values from the LookUp Activity which use the json script)
     
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/ForEach_Activity.png" alt="image" width="500" height="auto">
 
-### 2- Distributing the transformed data to two destinations:
+### **2- PL_Trans_Load_Fact_Table: Distributing the transformed data to two destinations:**
  - **Data Science Team:** The data undergoes aggregation and transformation through an ETL process.
  - **Headquarters:** Additional transformations are performed to convert the data into KPIs for quick reporting.
 
-   <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table.png" alt="image" width="500" height="auto">
-   
-   <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table_inside.png" alt="image" width="500" height="auto">
+#### **Steps:**
+  - **Creation a Data flow Activity:**
+    
+    <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table.png" alt="image" width="500" height="auto">
+       
+     **1- Creation of source connection:** It is used a with path to extract all csv files:
 
-### 3- Extracting data from dimensional tables for the Data Science team.
+    <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside_source.png" alt="image" width="500" height="auto">
+
+    **2- Transform the dataset for each purpose:**
+    
+   <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside.png" alt="image" width="500" height="auto">
+
+   **3- Creation of sink connection:** It is used a single partition with the purpose to maintain just one file
+
+    <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside_sink.png" alt="image" width="500" height="auto">
+
+### **3- PL_Load_Dim_Tables:Extracting data from dimensional tables for the Data Science team:**
+
+#### **Steps:**
+  - **Creation of Get Metadata Activity:** This activity will extract the data from the folder dimensional data
+    
+     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables/PL_Load_Dim_Tables_getMetadata.png" alt="image" width="500" height="auto">
+    
+    - **Creation a Dynamic Copy Activity:**
+    
+     **1- Creation of source connection:**
+    
+     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_source_inside.png" alt="image" width="500" height="auto">
+     
+     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_source.png" alt="image" width="500" height="auto">
+
+     **2- Creation of sink connection:**
+    
+     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_sink_inside.png" alt="image" width="500" height="auto">
+     
+     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_sink.png" alt="image" width="500" height="auto">
+
+
+     
+  - **Creation of forEach Activity and put inside the Dynamic Copy:** (Extract the values from the LookUp Activity which use the json script)
+    
+     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/ForEach_Activity.png" alt="image" width="500" height="auto">
 
   <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables.png" alt="image" width="500" height="auto">
 
