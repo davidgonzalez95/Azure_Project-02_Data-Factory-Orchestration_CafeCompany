@@ -11,20 +11,20 @@ This Azure Data Factory data orchestration project aims to automate the extracti
 The architecture is based on the following steps:
 
 ### **1- PL_Extract_Data:** 
-Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub), by using a **dynamic copy parameter** within a forEach activity that reads the corresponding url address and loads the data through a json file placed in the Lookup Activity.
+Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub), by using a **dynamic copy parameter to extract the path URL and file destination** within a forEach activity that reads the corresponding url address and loads the data through a json file placed in the Lookup Activity.
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data.png" alt="image" width="500" height="auto">
 
 #### **Steps:**
   - **Creation a Dynamic Copy Activity:**
     
-     **1- Creation of source:**
+     **1- Creation of source connection:**
     
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_source_inside.png" alt="image" width="500" height="auto">
      
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_source.png" alt="image" width="500" height="auto">
 
-     **2- Creation of sink:**
+     **2- Creation of sink connection:**
     
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/Dynamic_Copy_Activity_sink_inside.png" alt="image" width="500" height="auto">
      
