@@ -60,7 +60,8 @@ Distributing the transformed data to two destinations:
 
     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside_sink.png" alt="image" width="500" height="auto">
 
-### **3- PL_Load_Dim_Tables:Extracting data from dimensional tables for the Data Science team:**
+### **3- PL_Load_Dim_Tables:**
+Extracting data from dimensional tables to the Data Science folder:
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables.png" alt="image" width="500" height="auto">
 
