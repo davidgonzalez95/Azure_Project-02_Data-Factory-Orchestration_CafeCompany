@@ -8,18 +8,17 @@
    - [1- PL_Extract_Data](#pl_extract_data)
    - [2- PL_Trans_Load_Fact_Table](#pl_trans_load_fact_table)
    - [3- PL_Load_Dim_Tables](#pl_load_dim_tables)
-   - [4- Executing the pipelines automatically via a scheduled trigger](#executing-the-pipelines-automatically-via-a-scheduled-trigger)
-4. [Monitoring pipeline execution by sending a failure notification](#monitoring-pipeline-execution-by-sending-a-failure-notification)
+   - [4- Type of trigger](#type-of-trigger)
+4. [Monitoring and notifications](#monitoring-and-notifications)
 5. [Results](#results)
 
 ## Project Description <a name="project-description"></a>
 
-This project addresses the problem a company may face when managing data distributed across multiple subsidiaries. In this project, the company has adopted a decentralized data management structure, where each subsidiary stores its data locally in SharePoint (simulated in this project using GitHub), while the headquarters consolidates this data into a Data Lake for global analysis. 
+This project addresses the problem that a company may face when managing data distributed across multiple subsidiaries. In this project, the company has adopted a decentralized data management structure, where each subsidiary stores its data locally in SharePoint (simulated in this project using GitHub), while the headquarters consolidates this data into a Data Lake for global analysis. 
 
-This data orchestration project with Azure Data Factory aims to automate the extraction, transformation, and loading (ETL) of sales data from subsidiaries through scheduled and monitored pipelines.
+This data orchestration project with Azure Data Factory **aims to automate the extraction, transformation, and loading (ETL) of sales data** from subsidiaries through scheduled and monitored pipelines.
 
-## Technical Components
-<a name="technical-components"></a>
+## Technical Components <a name="technical-components"></a>
 
  - **Azure Data Factory (ADF):** Data integration and orchestration platform.
  - **SharePoint/GitHub:** Data source for subsidiaries' sales records.
@@ -129,7 +128,7 @@ Extracting data from dimensional tables to the Data Science folder:
      
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables/PL_Load_Dim_Tables_CopyActivity_sink_inside.png" alt="image" width="500" height="auto">
 
-### 4- Executing the pipelines automatically via a scheduled trigger: <a name="executing-the-pipelines-automatically-via-a-scheduled-trigger"></a>
+### 4- Type of trigger: <a name="type-of-trigger"></a>
 
 Since the subsidiaries upload their data to their respective repositories on GitHub on a specific day, but the **exact time of upload is unknown**, it was decided to use a **scheduled trigger** to ensure that the pipelines run at regular intervals every hour throughout that day.
 
@@ -145,7 +144,7 @@ This is the scheduled trigger design:
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Trigger.png" alt="image" width="500" height="auto">
 
-## Monitoring pipeline execution by sending a failure notification: <a name="monitoring-pipeline-execution-by-sending-a-failure-notification"></a>
+## Monitoring and Notifications: <a name="monitoring-and-notifications"></a>
 
 In this case, it has been decided to create an email notification only in the event of a failure in any of the created pipelines. These are the characteristics of the notification:
 
