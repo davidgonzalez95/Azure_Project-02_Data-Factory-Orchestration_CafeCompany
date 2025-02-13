@@ -65,7 +65,7 @@ Extracting sales data for January from the subsidiaries' SharePoint repositories
     
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/ForEach_Activity.png" alt="image" width="500" height="auto">
 
-#### Results:
+#### PL_Extract_Data results:
 
    - **fact-data Folder:**
 
