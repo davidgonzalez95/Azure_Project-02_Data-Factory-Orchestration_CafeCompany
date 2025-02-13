@@ -14,9 +14,9 @@
 
 ## Project Description <a name="project-description"></a>
 
-This project addresses the problem that a company may face when managing data distributed across multiple subsidiaries. In this project, the company has adopted a decentralized data management structure, where each subsidiary stores its data locally in SharePoint (simulated in this project using GitHub), while the headquarters consolidates this data into a Data Lake for global analysis. 
+<p align="justify">This project addresses the problem that a company may face when managing data distributed across multiple subsidiaries. In this project, the company has adopted a decentralized data management structure, where each subsidiary stores its data locally in SharePoint (simulated in this project using GitHub), while the headquarters consolidates this data into a Data Lake for global analysis.</p>
 
-This data orchestration project with Azure Data Factory **aims to automate the extraction, transformation, and loading (ETL) of sales data** from subsidiaries through scheduled and monitored pipelines.
+<p align="justify">This data orchestration project with Azure Data Factory <b>aims to automate the extraction, transformation, and loading (ETL) of sales data</b> from subsidiaries through scheduled and monitored pipelines.</p>
 
 ## Technical Components <a name="technical-components"></a>
 
