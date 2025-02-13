@@ -38,8 +38,8 @@ Extracting sales data for January from the subsidiaries' SharePoint repositories
     
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data_Description/ForEach_Activity.png" alt="image" width="500" height="auto">
 
-### **2- PL_Trans_Load_Fact_Table: 
-Distributing the transformed data to two destinations:**
+### **2- PL_Trans_Load_Fact_Table:** 
+Distributing the transformed data to two destinations:
  - **Data Science Team:** The data undergoes aggregation and transformation through an ETL process.
  - **Headquarters:** Additional transformations are performed to convert the data into KPIs for quick reporting.
 
