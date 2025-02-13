@@ -94,8 +94,8 @@ Distributing the transformed data to two destinations:
 
     <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table/PL_Trans_Load_Fact_Table_inside_sink.png" alt="image" width="500" height="auto">
 
-### **3- PL_Load_Dim_Tables:**
-<a name="pl_load_dim_tables"></a>
+### **3- PL_Load_Dim_Tables:** <a name="pl_load_dim_tables"></a>
+
 Extracting data from dimensional tables to the Data Science folder:
 
 <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables.png" alt="image" width="500" height="auto">
@@ -129,16 +129,27 @@ Extracting data from dimensional tables to the Data Science folder:
      
      <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Load_Dim_Tables/PL_Load_Dim_Tables_CopyActivity_sink_inside.png" alt="image" width="500" height="auto">
 
-### 4- Executing the pipelines automatically via a scheduled trigger:
-<a name="executing-the-pipelines-automatically-via-a-scheduled-trigger"></a>
+### 4- Executing the pipelines automatically via a scheduled trigger: <a name="executing-the-pipelines-automatically-via-a-scheduled-trigger"></a>
 
-### 5- Monitoring pipeline execution by sending success or failure notifications:
-<a name="monitoring-pipeline-execution-by-sending-success-or-failure-notifications"></a>
+Since the subsidiaries upload their data to their respective repositories on GitHub on a specific day, but the **exact time of upload is unknown**, it was decided to use a **scheduled trigger** to ensure that the pipelines run at regular intervals every hour throughout that day.
+
+The workflow would be as follows:
+
+- The subsidiaries upload the data to their respective GitHub repositories on a specific day, but there is no exact schedule for this.
+- To ensure that the data is extracted as soon as it is uploaded, a scheduled trigger is set up to run the data extraction pipeline every hour during that day.
+- In this way, even though the exact time when the data will be available cannot be predicted, the pipeline will continuously check, and when the data becomes available, the extraction, transformation, and loading (ETL) process will be initiated.
+
+This approach also has the advantage of **ensuring there are no significant delays in processing**, as the pipeline will automatically execute at regular intervals, without the need for manual intervention.
+
+This is the scheduled trigger design: 
+
+<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Trigger.png" alt="image" width="500" height="auto">
+
+### 5- Monitoring pipeline execution by sending success or failure notifications: <a name="monitoring-pipeline-execution-by-sending-success-or-failure-notifications"></a>
 
 
 
-## Results:
-<a name="results"></a>
+## Results: <a name="results"></a>
 
 - [**Data science Folder**](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/tree/main/Data/Pipeline_Results/data-science-models)
   
