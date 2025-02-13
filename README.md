@@ -76,7 +76,7 @@ Distributing the transformed data to two destinations:
  - **Data Science Team:** The data undergoes aggregation and transformation through an ETL process.
  - **Headquarters:** Additional transformations are performed to convert the data into KPIs for quick reporting.
 
-<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table.png" alt="image" width="250" height="auto">
+    <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Trans_Load_Fact_Table.png" alt="image" width="250" height="auto">
 
 #### **Steps:**
   - **Creation a Data flow Activity:**
@@ -163,9 +163,9 @@ In this case, it has been decided to create an email notification only in the ev
 ## Results: <a name="results"></a>
 
 - [**Data science Folder**](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/tree/main/Data/Pipeline_Results/data-science-models)
-  
-<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Storage_data-science-models.png" alt="image" width="200" height="auto">
+
+    <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Storage_data-science-models.png" alt="image" width="200" height="auto">
 
 - [**Reporting Folder**](https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/tree/main/Data/Pipeline_Results/hq-data-monthly-report)
 
-<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Storage_hq-data-monthly-report.png" alt="image" width="250" height="auto">
+    <img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/Storage_hq-data-monthly-report.png" alt="image" width="250" height="auto">
