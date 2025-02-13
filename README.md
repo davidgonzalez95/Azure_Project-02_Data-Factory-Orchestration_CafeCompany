@@ -13,7 +13,7 @@ The architecture is based on the following steps:
 ### **1- PL_Extract_Data:** 
 Extracting sales data for January from the subsidiaries' SharePoint repositories (simulated in GitHub), by using a **dynamic copy parameter** within a forEach activity that reads the corresponding url address and loads the data through a json file placed in the Lookup Activity.
 
-<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data.png" alt="image" width="100" height="auto">
+<img src="https://github.com/davidgonzalez95/Azure-Data-Factory-Data-Orchestration-Project/blob/main/Pictures/PL_Extract_Data.png" alt="image" width="500" height="auto">
 
 #### **Steps:**
   - **Creation a Dynamic Copy Activity:**
