@@ -20,9 +20,9 @@ This data orchestration project with Azure Data Factory **aims to automate the e
 
 ## Technical Components <a name="technical-components"></a>
 
- - **Azure Data Factory (ADF):** Data integration and orchestration platform.
  - **SharePoint/GitHub:** Data source for subsidiaries' sales records.
  - **Azure Data Lake:** Centralized storage for transformed data.
+ - **Azure Data Factory (ADF):** Data integration and orchestration platform.
  - **ETL Pipelines:** Data transformation and loading processes.
  - **Scheduled Triggers:** Automated pipeline execution.
  - **Monitoring and Notifications:** Alerts for success or failure events.
