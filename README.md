@@ -18,7 +18,7 @@
 
 <p align="justify">This data orchestration project with Azure Data Factory <b>aims to automate the extraction, transformation, and loading (ETL) of sales data</b> from subsidiaries through scheduled and monitored pipelines.</p>
 
-## Technical Components <a name="technical-components"></a>
+## Technical Components <a name="technical-components"></a>a
 
  - **SharePoint/GitHub:** Data source for subsidiaries' sales records.
  - **Azure Data Lake:** Centralized storage for transformed data.
